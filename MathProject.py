@@ -6,7 +6,8 @@ def hello():
     print("\nWelcome to my program!")
     print("\nThe goal of this program is to answer math equations and conversions using Python.\n")
 
-running = True
+running1 = True
+running2 = True
 
 def A_R():
     try:
@@ -62,10 +63,51 @@ list_of_math = {
 }
 
 conversions = {
-    1: ''
+    1: 'Meters to Centimeters',
+    2: 'Centimeters to Meters',
+    3: 'Inches to Feet',
+    4: 'Inches to Yards',
+    5: 'Inches to Miles',
+    6: 'Feet to Inches',
+    7: 'Feet to Yards',
+    8: 'Feet to Miles',
+    9: 'Yards to Inches',
+    10: 'Yards to Feet',
+    11: 'Yards to Miles',
+    12: 'Miles to Inches',
+    13: 'Miles to Feet',
+    14: 'Miles to Yards',
 } #This dictionary is for converting measurements (wip) for now
 
-while running:
+Select = {
+    1: "Converting Measurements",
+    2: "Calcuating the Area",
+}
+
+for x in Select.keys():
+    print(f"\nYour choices are {x}: {Select[x]}")    
+sel = input(f"\nEnter a number: ")
+try:
+    if sel == "1":
+        running2 = False
+    elif sel == "2":
+        running1 = False
+except:
+    print("\nThat is not a valid choice!\nPlease run this program again!\n")
+
+while running1:
+
+    hello()
+
+    for key, value in Select.items():
+        print(f"Your choices are {key}: {value}.\n")
+    strchoice = input("Please select a number: ")
+    choice = float(strchoice)
+
+    if choice == 1:
+        break
+
+while running2:
 
     hello()
 
