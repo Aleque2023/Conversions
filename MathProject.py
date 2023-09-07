@@ -6,8 +6,15 @@ def hello():
     print("\nWelcome to my program!")
     print("\nThe goal of this program is to answer math equations and conversions using Python.\n")
 
-running1 = True
-running2 = True
+running1 = 0
+running2 = 0
+
+def again():
+    program = input("\nWould you like to run it again? (Y/N) ")
+    if program.lower() == "n":
+        exit
+    elif program == "":
+        exit
 
 def A_R():
     try:
@@ -54,6 +61,33 @@ def A_C():
     except:
         print("\nThat is not a valid number!")
 
+def cmc():
+    try:
+        print("\nYou have selected converting Meters to Centimeters")
+        meters = input("\nHow many meters: ")
+        result = float(meters) * 100
+        print(f"\nYou converted {meters} meters to {result} centimeters.")
+    except:
+        print("\nThat is not a valid number!")
+
+def ccm():
+    try:
+        print("\nYou have selected converting Centimeters to Meters")
+        centimeters = input("\nHow many centimeters: ")
+        result = float(centimeters) / 100
+        print(f"\nYou converted {centimeters} centimeters to {result} meters.")
+    except:
+        print("\nThat is not a valid number!")
+
+def cif():
+    try:
+        print("\nYou have selected converting Inches to Feet")
+        inches = input("\nHow many inches: ")
+        result = float(inches) / 12
+        print(f"\nYou converted {inches} inches to {result} feet.")
+    except:
+        print("\nThat is not a valid number!")
+
 list_of_math = {
     1: 'Area of a Rectangle ',
     2: 'Area of a Parallelogram ',
@@ -86,46 +120,60 @@ Select = {
 
 for x in Select.keys():
     print(f"\nYour choices are {x}: {Select[x]}")    
-sel = input(f"\nEnter a number: ")
-try:
-    if sel == "1":
-        running2 = False
-    elif sel == "2":
-        running1 = False
-except:
-    print("\nThat is not a valid choice!\nPlease run this program again!\n")
+sel = int(input(f"\nEnter a number: "))
+if sel == 1:
+    running1 -= 1
+elif sel == 2:
+    running2 -= 1
+else:
+    print("\nThat is not a valid choice!\n\nPlease run this program again!\n")
 
-while running1:
-
-    hello()
-
-    for key, value in Select.items():
-        print(f"Your choices are {key}: {value}.\n")
-    strchoice = input("Please select a number: ")
-    choice = float(strchoice)
-
-    if choice == 1:
-        break
-
-while running2:
+while running1 < 0:
 
     hello()
 
-    for key, value in list_of_math.items():
-        print(f"Your choices are {key}: {value}.\n")
-    choice = float(input("Please select a number: "))
-    if choice == 1:
+    for key1, value1 in conversions.items():
+        print(f"Your choices are {key1}: {value1}.\n")
+    choice1 = int(input("Please select a number: "))
+
+    if choice1 == 1:
+        cmc()
+    elif choice1 == 2:
+        ccm()
+    elif choice1 == 3:
+        cif()
+    else:
+        program = input("\nWould you like to run it again? (Y/N) ")
+        if program.lower() == "n":
+            running1 += 1
+        elif program == "":
+            running1 += 1
+
+while running2 < 0:
+
+    hello()
+
+    for key2, value2 in list_of_math.items():
+        print(f"Your choices are {key2}: {value2}.\n")
+    choice2 = input("Please select a number: ")
+    choice2 = int(choice2)
+    if choice2 == 1:
         A_R()
-    elif choice == 2:
+    elif choice2 == 2:
         A_P()
-    elif choice == 3:
+    elif choice2 == 3:
         A_Te()
-    elif choice == 4:
+    elif choice2 == 4:
         A_Tp()
-    elif choice == 5:
+    elif choice2 == 5:
         A_C()
+    else:
+        program2 = input("\nWould you like to run it again? (Y/N) ")
+        if program2.lower() == "n":
+            break
+        elif program2 == "":
+            break
     
-
 
 
 
@@ -133,8 +181,10 @@ while running2:
 
     program = input("\nWould you like to run it again? (Y/N) ")
     if program.lower() == "n":
+        running2 += 1
         break
     elif program == "":
+        running2 += 1
         break
 
 print("\nThanks for using my program!")
