@@ -3,7 +3,7 @@
 import math
 
 def hello():
-    print("\nWelcome to my program!")
+    print("\nWelcome To My Program!")
     print("\nThe goal of this program is to answer math equations and conversions using Python.\n")
 
 def no():
@@ -56,82 +56,235 @@ def A_C():
 
 def cmc():
     try:
-        print("\nYou have selected converting Meters to Centimeters")
-        meters = input("\nHow many meters: ")
+        print("\nYou Have Selected Converting Meters To Centimeters.")
+        meters = input("\nHow Many Meters: ")
         result = float(meters) * 100
-        print(f"\nYou converted {meters} meters to {result} centimeters.")
+        print(f"\nYou Converted {meters} Meters To {result} Centimeters.")
     except:
         no()
 
 def ccm():
     try:
-        print("\nYou have selected converting Centimeters to Meters")
-        centimeters = input("\nHow many centimeters: ")
+        print("\nYou Have Selected Converting Centimeters To Meters.")
+        centimeters = input("\nHow Many Centimeters: ")
         result = float(centimeters) / 100
-        print(f"\nYou converted {centimeters} centimeters to {result} meters.")
+        print(f"\nYou Converted {centimeters} Centimeters To {result} Meters.")
     except:
         no()
 
 def cmk():
     try:
-        print("\nYou have selected converting Meters to Kilometers")
-        meters = input("\nHow many meters: ")
+        print("\nYou Have Selected Converting Meters To Kilometers.")
+        meters = input("\nHow Many Meters: ")
         result = float(meters) / 1000
-        print(f"\nYou converted {meters} meters to {result} kilometers.")
+        print(f"\nYou Converted {meters} Meters To {result} Kilometers.")
     except:
         no()
 
 def ckm():
     try:
-        print("\nYou have selected converting Kilometers to Meters")
-        kilometers = input("\nHow many Kilometers: ")
+        print("\nYou Have Selected Converting Kilometers To Meters.")
+        kilometers = input("\nHow Many Kilometers: ")
         result = float(kilometers) * 1000
-        print(f"\nYou converted {kilometers} Kilometers to {result} Meters.")
+        print(f"\nYou Converted {kilometers} Kilometers To {result} Meters.")
     except:
         no()
 
 def cck():
     try:
-        print("\nYou have selected converting Centimeters to Kilometers")
-        centimeters = input("\nHow many Centimeters: ")
+        print("\nYou Have Selected Converting Centimeters To Kilometers.")
+        centimeters = input("\nHow Many Centimeters: ")
         result = float(centimeters) / 100000
-        print(f"\nYou converted {centimeters} centimeters to {result} Kilometers.")
+        print(f"\nYou Converted {centimeters} Centimeters To {result} Kilometers.")
     except:
         no()
 
 def ckc():
     try:
-        print("\nYou have selected converting Kilometers to Centimeters")
-        kilometers = input("\nHow many Kilometers: ")
+        print("\nYou Have Selected Converting Kilometers To Centimeters.")
+        kilometers = input("\nHow Many Kilometers: ")
         result = float(kilometers) * 100000
-        print(f"\nYou converted {kilometers} Kilometers to {result} Centimeters.")
+        print(f"\nYou Converted {kilometers} Kilometers To {result} Centimeters.")
     except:
         no()
 
 def cif():
     try:
-        print("\nYou have selected converting Inches to Feet")
-        inches = input("\nHow many inches: ")
+        print("\nYou Have Selected Converting Inches To Feet.")
+        inches = input("\nHow Many Inches: ")
         result = float(inches) / 12
-        print(f"\nYou converted {inches} inches to {result} feet.")
+        print(f"\nYou Converted {inches} Inches To {result} Feet.")
     except:
         no()
 
 def ciy():
     try:
-        print("\nYou have selected converting Inches to Yards")
-        inches = input("\nHow many inches: ")
+        print("\nYou Have Selected Converting Inches To Yards.")
+        inches = input("\nHow Many Inches: ")
         result = float(inches) / 36
-        print(f"\nYou converted {inches} Inches to {result} Yards.")
+        print(f"\nYou Converted {inches} Inches To {result} Yards.")
     except:
         no()
 
 def cim():
     try:
-        print("\nYou have selected converting Inches to Miles")
-        inches = input("\nHow many inches: ")
+        print("\nYou Have Selected Converting Inches To Miles.")
+        inches = input("\nHow Many Inches: ")
         result = float(inches) / (12 * 5280)
-        print(f"\nYou converted {inches} Inches to {result} Miles.")
+        print(f"\nYou Converted {inches} Inches To {result} Miles.")
+    except:
+        no()
+
+def cfi():
+    try:
+        print("\nYou Have Selected Converting Feet To Inches.")
+        feet = input("\nHow Many Feet: ")
+        result = float(feet) * 12
+        print(f"\nYou Converted {feet} Feet To {result} Inches.")
+    except:
+        no()
+
+def cfy():
+    try:
+        print("\nYou Have Selected Converting Feet To Yards.")
+        feet = input("\nHow Many Feet: ")
+        result = float(feet) / 3
+        print(f"\nYou Converted {feet} Feet To {result} Yards.")
+    except:
+        no()
+
+def cfm():
+    try:
+        print("\nYou Have Selected Converting Feet to Miles.")
+        feet = input("\nHow Many Feet: ")
+        result = float(feet) / 5280
+        print(f"\nYou Converted {feet} Feet To {result} Miles.")
+    except:
+        no()
+
+def cyi():
+    try:
+        print("\nYou Have Selected Converting Yards To Inches.")
+        yard = input("\nHow Many Yards: ")
+        result = float(yard) * 36
+        print(f"\nYou Converted {yard} Yards To {result} Inches.")
+    except:
+        no()
+
+def cyf():
+    try:
+        print("\nYou Have Selected Converting Yards To Feet.")
+        yard = input("\nHow Many Yards: ")
+        result = float(yard) * 3
+        print(f"\nYou Converted {yard} Yards To {result} Feet.")
+    except:
+        no()
+
+def cym():
+    try:
+        print("\nYou Have Selected Converting Yards To Miles.")
+        yard = input("\nHow Many Yards: ")
+        result = (float(yard) * 3) / 5280
+        print(f"\nYou Converted {yard} Yards To {result} Miles.")
+    except:
+        no()
+
+def cmi():
+    try:
+        print("\nYou Have Selected Converting Miles To Inches.")
+        mile = input("\nHow Many Miles: ")
+        result = float(mile) * 63360
+        print(f"\nYou Converted {mile} Miles To {result} Inches.")
+    except:
+        no()
+
+def cmf():
+    try:
+        print("\nYou Have Selected Converting Miles To Feet.")
+        mile = input("\nHow Many Miles: ")
+        result = float(mile) * 5280
+        print(f"\nYou Converted {mile} Miles To {result} Feet.")
+    except:
+        no()
+
+def cmy():
+    try:
+        print("\nYou Have Selected Converting Miles To Yards.")
+        mile = input("\nHow Many Miles: ")
+        result = (float(mile) * 5280) / 3
+        print(f"\nYou Converted {mile} Miless To {result} Yards.")
+    except:
+        no()
+
+def cmiki():
+    try:
+        print("\nYou Have Selected Converting Miles To Kilometers.")
+        mile = input("\nHow Many Miles: ")
+        result = float(mile) * 1.609
+        print(f"\nYou Converted {mile} Miles To {result} Kilometers.")
+    except:
+        no()
+
+def ckimi():
+    try:
+        print("\nYou Have Selected Converting Kilometers To Miles.")
+        kilometers = input("\nHow Many Kilometers: ")
+        result = float(kilometers) / 1.609
+        print(f"\nYou Converted {kilometers} Kilometers To {result} Miles.")
+    except:
+        no()
+
+def tsm():
+    try:
+        print("\nYou Have Selected Converting Seconds To Minutes.")
+        seconds = input("\nHow Many Seconds: ")
+        result = float(seconds) / 60
+        print(f"\nYou Converted {seconds} Seconds To {result} Minutes.")
+    except:
+        no()
+
+def tsh():
+    try:
+        print("\nYou Have Selected Converting Seconds To Hours.")
+        seconds = input("\nHow Many Seconds: ")
+        result = float(seconds) / 3600
+        print(f"\nYou Converted {seconds} Seconds To {result} Hours.")
+    except:
+        no()
+
+def tms():
+    try:
+        print("\nYou Have Selected Converting Minutes To Seconds.")
+        minutes = input("\nHow Many Minutes: ")
+        result = float(minutes) * 60
+        print(f"\nYou Converted {minutes} Minutes To {result} Seconds.")
+    except:
+        no()
+
+def tmh():
+    try:
+        print("\nYou Have Selected Converting Minutes To Hours.")
+        minutes = input("\nHow Many Minutes: ")
+        result = float(minutes) / 60
+        print(f"\nYou Converted {minutes} Minutes To {result} Hours.")
+    except:
+        no()
+
+def ths():
+    try:
+        print("\nYou Have Selected Converting Hours To Seconds.")
+        hours = input("\nHow Many Hours: ")
+        result = float(hours) * 3600
+        print(f"\nYou Converted {hours} Hours To {result} Seconds.")
+    except:
+        no()
+
+def thm():
+    try:
+        print("\nYou Have Selected Converting Hours To Minutes.")
+        hours = input("\nHow Many Hours: ")
+        result = float(hours) * 60
+        print(f"\nYou Converted {hours} Hours To {result} Minutes.")
     except:
         no()
 
@@ -169,6 +322,10 @@ disconv = {
 timeconv = {
     1: 'Seconds to Minutes',
     2: 'Seconds to Hours',
+    3: 'Minutes to Seconds',
+    4: 'Minutes to Hours',
+    5: 'Hours to Seconds',
+    6: 'Hours to Minutes',
 }
 
 Select = {
@@ -234,12 +391,6 @@ while run == 0:
             cmiki()
         elif choice1 == 20:
             ckimi()
-        else:
-            program = input("\nWould you like to run it again? (Y/N) ")
-            if program.lower() == "n":
-                continue
-            elif program == "":
-                continue
 
     elif sel == "2":
         
@@ -259,12 +410,6 @@ while run == 0:
             A_Tp()
         elif choice2 == 5:
             A_C()
-        else:
-            program2 = input("\nWould you like to run it again? (Y/N) ")
-            if program2.lower() == "n":
-                continue
-            elif program2 == "":
-                continue
 
     elif sel == "3":
 
@@ -275,11 +420,21 @@ while run == 0:
         choice3 = input("Please select a number: ")
         choice3 = int(choice3)
         if choice3 == 1:
-
+            tsm()
+        elif choice3 == 2:
+            tsh()
+        elif choice3 == 3:
+            tms()
+        elif choice3 == 4:
+            tmh()
+        elif choice3 == 5:
+            ths()
+        elif choice3 == 6:
+            thm()
     else:
         print("\nThat is not a valid choice!\n\nPlease run this program again!\n")
     
-    program = input("\nWould you like to run it again? (Y/N) ")
+    program = input("\nWould you like to run the entire program again? (Y/N) ")
     if program.lower() == "n":
         run += 1
         break
