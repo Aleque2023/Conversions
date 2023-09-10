@@ -288,6 +288,42 @@ def thm():
     except:
         no()
 
+def wgm():
+    try:
+        print("\nYou Have Selected Converting Grams To Milligrams.")
+        grams = input("\nHow Many Grams: ")
+        result = float(grams) * 1000
+        print(f"\nYou Converted {grams} Grams To {result} Milligrams.")
+    except:
+        no()
+
+def wgk():
+    try:
+        print("\nYou Have Selected Converting Grams To Kilograms.")
+        grams = input("\nHow Many Grams: ")
+        result = float(grams) /1000
+        print(f"\nYou Converted {grams} Grams To {result} Kilograms.")
+    except:
+        no()
+
+def wmg():
+    try:
+        print("\nYou Have Selected Converting Milligrams To Grams.")
+        milligrams = input("\nHow Many Milligrams: ")
+        result = float(milligrams) /1000
+        print(f"\nYou Converted {milligrams} Milligrams To {result} Grams.")
+    except:
+        no()
+
+def wmk():
+    try:
+        print("\nYou Have Selected Converting Milligrams To Kilograms.")
+        milligrams = input("\nHow Many Milligrams: ")
+        result = float(milligrams) /1000000
+        print(f"\nYou Converted {milligrams} Milligrams To {result} Kilograms.")
+    except:
+        no()
+
 area = {
     1: 'Area of a Rectangle ',
     2: 'Area of a Parallelogram ',
@@ -326,6 +362,17 @@ timeconv = {
     4: 'Minutes to Hours',
     5: 'Hours to Seconds',
     6: 'Hours to Minutes',
+}
+
+weightconv = {
+    1: 'Grams to Milligrams',
+    2: 'Grams to Kilograms',
+    3: 'Milligrams to Grams',
+    4: 'Milligrams to Kilograms',
+    5: 'Pounds to Ounces',
+    6: 'Ounces to Pounds',
+    7: 'Liters to Cubic Centimeters',
+    8: 'Cubic Centimeters to Liters',
 }
 
 Select = {
@@ -431,6 +478,23 @@ while run == 0:
             ths()
         elif choice3 == 6:
             thm()
+
+    elif sel == "4":
+
+        hello()
+
+        for key4, value4 in weightconv.items():
+            print(f"Your choices are {key4}: {value4}.\n")
+        choice4 = input("Please select a number: ")
+        choice4 = int(choice4)
+        if choice4 == 1:
+            wgm()
+        elif choice4 == 2:
+            wgk()
+        elif choice4 == 3:
+            wmg()
+        elif choice4 == 4:
+            wmk()
     else:
         print("\nThat is not a valid choice!\n\nPlease run this program again!\n")
     
