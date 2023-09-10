@@ -3,8 +3,7 @@
 import math
 
 def hello():
-    print("\nWelcome To My Program!")
-    print("\nThe goal of this program is to answer math equations and conversions using Python.\n")
+    print(f"\nWelcome To {Select[x]}!\n")
 
 def no():
     print("\nThat Is Not A Valid Number!")
@@ -373,6 +372,25 @@ weightconv = {
     6: 'Ounces to Pounds',
     7: 'Liters to Cubic Centimeters',
     8: 'Cubic Centimeters to Liters',
+    9: 'Fluid Oz to Cups',
+    10: 'Fluid Oz to Pints',
+    11: 'Fluid Oz to Quarts',
+    12: 'Fluid Oz to Gallons',
+    13: 'Cups to Fluid Oz',
+    14: 'Cups to Pints',
+    15: 'Cups to Quarts',
+    16: 'Cups to Gallons',
+    17: 'Pints to Fluid Oz',
+    18: 'Pints to Cups',
+    19: 'Pints to Gallons',
+    20: 'Quarts to Fluid Oz',
+    21: 'Quarts to Cups',
+    22: 'Quarts to Pints',
+    23: 'Quarts to Gallons',
+    24: 'Gallons to Fluid Oz',
+    25: 'Gallons to Cups',
+    26: 'Gallons to Pints',
+    27: 'Gallons to Quarts',
 }
 
 Select = {
