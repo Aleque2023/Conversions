@@ -237,7 +237,7 @@ def tsm():
     try:
         print("\nYou Have Selected Converting Seconds To Minutes.")
         seconds = input("\nHow Many Seconds: ")
-        result = float(seconds) / 60
+        result = round(float(seconds) / 60,2)
         print(f"\nYou Converted {seconds} Seconds To {result} Minutes.")
     except:
         no()
@@ -246,7 +246,7 @@ def tsh():
     try:
         print("\nYou Have Selected Converting Seconds To Hours.")
         seconds = input("\nHow Many Seconds: ")
-        result = float(seconds) / 3600
+        result = round(float(seconds) / 3600,2)
         print(f"\nYou Converted {seconds} Seconds To {result} Hours.")
     except:
         no()
@@ -255,7 +255,7 @@ def tms():
     try:
         print("\nYou Have Selected Converting Minutes To Seconds.")
         minutes = input("\nHow Many Minutes: ")
-        result = float(minutes) * 60
+        result = round(float(minutes) * 60,2)
         print(f"\nYou Converted {minutes} Minutes To {result} Seconds.")
     except:
         no()
@@ -264,7 +264,7 @@ def tmh():
     try:
         print("\nYou Have Selected Converting Minutes To Hours.")
         minutes = input("\nHow Many Minutes: ")
-        result = float(minutes) / 60
+        result = round(float(minutes) / 60,2)
         print(f"\nYou Converted {minutes} Minutes To {result} Hours.")
     except:
         no()
@@ -273,7 +273,7 @@ def ths():
     try:
         print("\nYou Have Selected Converting Hours To Seconds.")
         hours = input("\nHow Many Hours: ")
-        result = float(hours) * 3600
+        result = round(float(hours) * 3600,2)
         print(f"\nYou Converted {hours} Hours To {result} Seconds.")
     except:
         no()
@@ -282,7 +282,7 @@ def thm():
     try:
         print("\nYou Have Selected Converting Hours To Minutes.")
         hours = input("\nHow Many Hours: ")
-        result = float(hours) * 60
+        result = round(float(hours) * 60,2)
         print(f"\nYou Converted {hours} Hours To {result} Minutes.")
     except:
         no()
@@ -649,7 +649,7 @@ weightconv = {
     31: 'Gallons to Pints',
     32: 'Gallons to Quarts',
 }
-
+################################## Note, I could try to change the longer dictionaries into smaller dictionaries in the future. Dictionary within a dictionary
 Select = {
     1: 'Converting Measurements',
     2: 'Calcuating the Area',
@@ -657,177 +657,193 @@ Select = {
     4: 'Converting Weight',
 }
 
+print("Thanks for using my program!")
+
 run = 0
 while run == 0:
 
     for x in Select.keys():
         print(f"\nYour choices are {x}: {Select[x]}")    
     sel = input("\nEnter a number: ")
-    if sel == "1":
+    try:
+        sel = int(sel)
+    except:
+        print("\nThat is not a valid choice!\n\nPlease run this program again!\n")
+    if sel == 1:
 
         hello()
 
         for key1, value1 in disconv.items():
             print(f"Your choices are {key1}: {value1}.\n")
-        choice1 = int(input("Please select a number: "))
 ################# The C in the definitions stands for convert.
 ################# The letters followed by C stands for what is converted
 ################# EX: cmc = convert meters to centimeters and so forth
-        if choice1 == 1:
-            cmc()
-        elif choice1 == 2:
-            ccm()
-        elif choice1 == 3:
-            cmk()
-        elif choice1 == 4:
-            ckm()
-        elif choice1 == 5:
-            cck()
-        elif choice1 == 6:
-            ckc()
-        elif choice1 == 7:
-            cif()
-        elif choice1 == 8:
-            ciy()
-        elif choice1 == 9:
-            cim()
-        elif choice1 == 10:
-            cfi()
-        elif choice1 == 11:
-            cfy()
-        elif choice1 == 12:
-            cfm()
-        elif choice1 == 13:
-            cyi()
-        elif choice1 == 14:
-            cyf()
-        elif choice1 == 15:
-            cym()
-        elif choice1 == 16:
-            cmi()
-        elif choice1 == 17:
-            cmf()
-        elif choice1 == 18:
-            cmy()
-        elif choice1 == 19:
-            cmiki()
-        elif choice1 == 20:
-            ckimi()
+        try:
+            choice1 = int(input("Please select a number: "))
+            if choice1 == 1:
+                cmc()
+            elif choice1 == 2:
+                ccm()
+            elif choice1 == 3:
+                cmk()
+            elif choice1 == 4:
+                ckm()
+            elif choice1 == 5:
+                cck()
+            elif choice1 == 6:
+                ckc()
+            elif choice1 == 7:
+                cif()
+            elif choice1 == 8:
+                ciy()
+            elif choice1 == 9:
+                cim()
+            elif choice1 == 10:
+                cfi()
+            elif choice1 == 11:
+                cfy()
+            elif choice1 == 12:
+                cfm()
+            elif choice1 == 13:
+                cyi()
+            elif choice1 == 14:
+                cyf()
+            elif choice1 == 15:
+                cym()
+            elif choice1 == 16:
+                cmi()
+            elif choice1 == 17:
+                cmf()
+            elif choice1 == 18:
+                cmy()
+            elif choice1 == 19:
+                cmiki()
+            elif choice1 == 20:
+                ckimi()
+        except:
+                print("\nNot valid.")
 
-    elif sel == "2":
+    elif sel == 2:
         
         hello()
 
         for key2, value2 in area.items():
             print(f"Your choices are {key2}: {value2}.\n")
         choice2 = input("Please select a number: ")
-        choice2 = int(choice2)
-        if choice2 == 1:
-            A_R()
-        elif choice2 == 2:
-            A_P()
-        elif choice2 == 3:
-            A_Te()
-        elif choice2 == 4:
-            A_Tp()
-        elif choice2 == 5:
-            A_C()
+        try:
+            choice2 = int(choice2)
+            if choice2 == 1:
+                A_R()
+            elif choice2 == 2:
+                A_P()
+            elif choice2 == 3:
+                A_Te()
+            elif choice2 == 4:
+                A_Tp()
+            elif choice2 == 5:
+                A_C()
+        except:
+            print("\nNot valid.")
 
-    elif sel == "3":
+    elif sel == 3:
 
         hello()
 
         for key3, value3 in timeconv.items():
             print(f"Your choices are {key3}: {value3}.\n")
         choice3 = input("Please select a number: ")
-        choice3 = int(choice3)
-        if choice3 == 1:
-            tsm()
-        elif choice3 == 2:
-            tsh()
-        elif choice3 == 3:
-            tms()
-        elif choice3 == 4:
-            tmh()
-        elif choice3 == 5:
-            ths()
-        elif choice3 == 6:
-            thm()
+        try:
+            choice3 = int(choice3)
+            if choice3 == 1:
+                tsm()
+            elif choice3 == 2:
+                tsh()
+            elif choice3 == 3:
+                tms()
+            elif choice3 == 4:
+                tmh()
+            elif choice3 == 5:
+                ths()
+            elif choice3 == 6:
+                thm()
+        except:
+            print("\nNot valid.")
 
-    elif sel == "4":
+    elif sel == 4:
 
         hello()
 
         for key4, value4 in weightconv.items():
             print(f"Your choices are {key4}: {value4}.\n")
         choice4 = input("Please select a number: ")
-        choice4 = int(choice4)
-        if choice4 == 1:
-            wgm()
-        elif choice4 == 2:
-            wgk()
-        elif choice4 == 3:
-            wmg()
-        elif choice4 == 4:
-            wmk()
-        elif choice4 == 5:
-            wpo()
-        elif choice4 == 6:
-            wop()
-        elif choice4 == 7:
-            wpt()
-        elif choice4 == 8:
-            wot()
-        elif choice4 == 9:
-            wtp()
-        elif choice4 == 10:
-            wto()
-        elif choice4 == 11:
-            wlc()
-        elif choice4 == 12:
-            wcl()
-        elif choice4 == 13:
-            wfc()
-        elif choice4 == 14:
-            wfp()
-        elif choice4 == 15:
-            wfq()
-        elif choice4 == 16:
-            wfg()
-        elif choice4 == 17:
-            wcf()
-        elif choice4 == 18:
-            wcp()
-        elif choice4 == 19:
-            wcq()
-        elif choice4 == 20:
-            wcg()
-        elif choice4 == 21:
-            wpf()
-        elif choice4 == 22:
-            wpc()
-        elif choice4 == 23:
-            wpq()
-        elif choice4 == 24:
-            wpg()
-        elif choice4 == 25:
-            wqf()
-        elif choice4 == 26:
-            wqc()
-        elif choice4 == 27:
-            wqp()
-        elif choice4 == 28:
-            wqg()
-        elif choice4 == 29:
-            wgf()
-        elif choice4 == 30:
-            wgc()
-        elif choice4 == 31:
-            wgp()
-        elif choice4 == 32:
-            wgq()
-    else:
-        print("\nThat is not a valid choice!\n\nPlease run this program again!\n")
+        try:
+            choice4 = int(choice4)
+            if choice4 == 1:
+                wgm()
+            elif choice4 == 2:
+                wgk()
+            elif choice4 == 3:
+                wmg()
+            elif choice4 == 4:
+                wmk()
+            elif choice4 == 5:
+                wpo()
+            elif choice4 == 6:
+                wop()
+            elif choice4 == 7:
+                wpt()
+            elif choice4 == 8:
+                wot()
+            elif choice4 == 9:
+                wtp()
+            elif choice4 == 10:
+                wto()
+            elif choice4 == 11:
+                wlc()
+            elif choice4 == 12:
+                wcl()
+            elif choice4 == 13:
+                wfc()
+            elif choice4 == 14:
+                wfp()
+            elif choice4 == 15:
+                wfq()
+            elif choice4 == 16:
+                wfg()
+            elif choice4 == 17:
+                wcf()
+            elif choice4 == 18:
+                wcp()
+            elif choice4 == 19:
+                wcq()
+            elif choice4 == 20:
+                wcg()
+            elif choice4 == 21:
+                wpf()
+            elif choice4 == 22:
+                wpc()
+            elif choice4 == 23:
+                wpq()
+            elif choice4 == 24:
+                wpg()
+            elif choice4 == 25:
+                wqf()
+            elif choice4 == 26:
+                wqc()
+            elif choice4 == 27:
+                wqp()
+            elif choice4 == 28:
+                wqg()
+            elif choice4 == 29:
+                wgf()
+            elif choice4 == 30:
+                wgc()
+            elif choice4 == 31:
+                wgp()
+            elif choice4 == 32:
+                wgq()
+        except:
+            print("\nNot valid.")
     
     program = input("\nWould you like to run the entire program again? (Y/N) ")
     if program.lower() == "n":
@@ -839,5 +855,5 @@ while run == 0:
     elif program.lower() == "y":
         run == 0
 
-print("\nThanks for using my program!")
+print("\nIn case I don't see you:\nGood Morning, Good Afternoon, Good Evening, and Good Night!")
 print("\nFeel free to add on to this!\n")
