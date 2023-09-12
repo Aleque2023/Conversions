@@ -323,6 +323,258 @@ def wmk():
     except:
         no()
 
+def wpo():
+    try:
+        print("\nYou Have Selected Converting Lbs To Oz.")
+        pounds = input("\nHow Many Lbs: ")
+        result = float(pounds) * 16
+        print(f"\nYou Converted {pounds} Lbs To {result} Oz.")
+    except:
+        no()
+
+def wpt():
+    try:
+        print("\nYou Have Selected Converting Lbs To Tons.")
+        pounds = input("\nHow Many Lbs: ")
+        result = float(pounds) / 2000
+        print(f"\nYou Converted {pounds} Lbs To {result} Tons.")
+    except:
+        no()
+
+def wot():
+    try:
+        print("\nYou Have Selected Converting Oz To Tons.")
+        oz = input("\nHow Many Oz: ")
+        result = float(oz) / 32000
+        print(f"\nYou Converted {oz} Oz To {result} Tons.")
+    except:
+        no()
+
+def wop():
+    try:
+        print("\nYou Have Selected Converting Oz To Lbs.")
+        oz = input("\nHow Many Oz: ")
+        result = float(oz) /16
+        print(f"\nYou Converted {oz} Oz To {result} Lbs.")
+    except:
+        no()
+
+def wtp():
+    try:
+        print("\nYou Have Selected Converting Tons To Lbs.")
+        tons = input("\nHow Many Tons: ")
+        result = float(tons) * 2000
+        print(f"\nYou Converted {tons} Tons To {result} Lbs.")
+    except:
+        no()
+
+def wto():
+    try:
+        print("\nYou Have Selected Converting Tons To Oz.")
+        tons = input("\nHow Many Tons: ")
+        result = float(tons) * 32000
+        print(f"\nYou Converted {tons} Tons To {result} Oz.")
+    except:
+        no()
+
+def wlc():
+    try:
+        print("\nYou Have Selected Converting Liters To Cubic Centimeters.")
+        liters = input("\nHow Many Liters: ")
+        result = float(liters) * 1000
+        print(f"\nYou Converted {liters} Liters To {result} Cubic Centimeters.")
+    except:
+        no()
+
+def wcl():
+    try:
+        print("\nYou Have Selected Converting Cubic Centimeters To Liters.")
+        cubic = input("\nHow Many Cubic Centimeters: ")
+        result = float(cubic) / 1000
+        print(f"\nYou Converted {cubic} Cubic Centimeters To {result} Liters.")
+    except:
+        no()
+
+def wfc():
+    try:
+        print("\nYou Have Selected Converting Fluid Oz To Cups.")
+        fluidoz = input("\nHow Many Fluid Oz: ")
+        result = float(fluidoz) / 8
+        print(f"\nYou Converted {fluidoz} Fluid Oz To {result} Cups.")
+    except:
+        no()
+
+def wfp():
+    try:
+        print("\nYou Have Selected Converting Fluid Oz To Pints.")
+        fluidoz = input("\nHow Many Fluid Oz: ")
+        result = float(fluidoz) / 16
+        print(f"\nYou Converted {fluidoz} Fluid Oz To {result} Pints.")
+    except:
+        no()
+
+def wfq():
+    try:
+        print("\nYou Have Selected Converting Fluid Oz To Quarts.")
+        fluidoz = input("\nHow Many Fluid Oz: ")
+        result = float(fluidoz) / 32
+        print(f"\nYou Converted {fluidoz} Fluid Oz To {result} Quarts.")
+    except:
+        no()
+
+def wfg():
+    try:
+        print("\nYou Have Selected Converting Fluid Oz To Gallons.")
+        fluidoz = input("\nHow Many Fluid Oz: ")
+        result = float(fluidoz) / 128
+        print(f"\nYou Converted {fluidoz} Fluid Oz To {result} Gallons.")
+    except:
+        no()
+
+def wcf():
+    try:
+        print("\nYou Have Selected Converting Cups To Fluid Oz.")
+        cups = input("\nHow Many Cups: ")
+        result = float(cups) * 8
+        print(f"\nYou Converted {cups} Cups To {result} Fluid Oz.")
+    except:
+        no()
+
+def wcp():
+    try:
+        print("\nYou Have Selected Converting Cups To Pints.")
+        cups = input("\nHow Many Cups: ")
+        result = float(cups) / 2
+        print(f"\nYou Converted {cups} Cups To {result} Pints.")
+    except:
+        no()
+
+def wcq():
+    try:
+        print("\nYou Have Selected Converting Cups To Quarts.")
+        cups = input("\nHow Many Cups: ")
+        result = float(cups) / 4
+        print(f"\nYou Converted {cups} Cups To {result} Quarts.")
+    except:
+        no()
+
+def wcg():
+    try:
+        print("\nYou Have Selected Converting Cups To Gallons.")
+        cups = input("\nHow Many Cups: ")
+        result = float(cups) / 16
+        print(f"\nYou Converted {cups} Cups To {result} Gallons.")
+    except:
+        no()
+
+def wpf():
+    try:
+        print("\nYou Have Selected Converting Pints To Fluid Oz.")
+        pints = input("\nHow Many Pints: ")
+        result = float(pints) * 16
+        print(f"\nYou Converted {pints} Pints To {result} Fluid Oz.")
+    except:
+        no()
+
+def wpc():
+    try:
+        print("\nYou Have Selected Converting Pints To Cups.")
+        pints = input("\nHow Many Pints: ")
+        result = float(pints) * 2
+        print(f"\nYou Converted {pints} Pints To {result} Cups.")
+    except:
+        no()
+
+def wpq():
+    try:
+        print("\nYou Have Selected Converting Pints To Quarts.")
+        pints = input("\nHow Many Pints: ")
+        result = float(pints) / 2
+        print(f"\nYou Converted {pints} Pints To {result} Quarts.")
+    except:
+        no()
+
+def wpg():
+    try:
+        print("\nYou Have Selected Converting Pints To Gallons.")
+        pints = input("\nHow Many Pints: ")
+        result = float(pints) / 8
+        print(f"\nYou Converted {pints} Pints To {result} Gallons.")
+    except:
+        no()
+
+def wqf():
+    try:
+        print("\nYou Have Selected Converting Quarts To Fluid Oz.")
+        quarts = input("\nHow Many Quarts: ")
+        result = float(quarts) * 32
+        print(f"\nYou Converted {quarts} Quarts To {result} Fluid Oz.")
+    except:
+        no()
+
+def wqc():
+    try:
+        print("\nYou Have Selected Converting Quarts To Cups.")
+        quarts = input("\nHow Many Quarts: ")
+        result = float(quarts) * 4
+        print(f"\nYou Converted {quarts} Quarts To {result} Cups.")
+    except:
+        no()
+
+def wqp():
+    try:
+        print("\nYou Have Selected Converting Quarts To Pints.")
+        quarts = input("\nHow Many Quarts: ")
+        result = float(quarts) * 2
+        print(f"\nYou Converted {quarts} Quarts To {result} Pints.")
+    except:
+        no()
+
+def wqg():
+    try:
+        print("\nYou Have Selected Converting Quarts To Gallons.")
+        quarts = input("\nHow Many Quarts: ")
+        result = float(quarts) / 4
+        print(f"\nYou Converted {quarts} Quarts To {result} Gallons.")
+    except:
+        no()
+
+def wgf():
+    try:
+        print("\nYou Have Selected Converting Gallons To Fluid Oz.")
+        gallons = input("\nHow Many Gallons: ")
+        result = float(gallons) * 128
+        print(f"\nYou Converted {gallons} Gallons To {result} Fluid Oz.")
+    except:
+        no()
+
+def wgc():
+    try:
+        print("\nYou Have Selected Converting Gallons To Cups.")
+        gallons = input("\nHow Many Gallons: ")
+        result = float(gallons) * 16
+        print(f"\nYou Converted {gallons} Gallons To {result} Cups.")
+    except:
+        no()
+
+def wgp():
+    try:
+        print("\nYou Have Selected Converting Gallons To Pints.")
+        gallons = input("\nHow Many Gallons: ")
+        result = float(gallons) * 8
+        print(f"\nYou Converted {gallons} Gallons To {result} Pints.")
+    except:
+        no()
+
+def wgq():
+    try:
+        print("\nYou Have Selected Converting Gallons To Quarts.")
+        gallons = input("\nHow Many Gallons: ")
+        result = float(gallons) * 4
+        print(f"\nYou Converted {gallons} Gallons To {result} Quarts.")
+    except:
+        no()
+
 area = {
     1: 'Area of a Rectangle ',
     2: 'Area of a Parallelogram ',
@@ -370,27 +622,32 @@ weightconv = {
     4: 'Milligrams to Kilograms',
     5: 'Pounds to Ounces',
     6: 'Ounces to Pounds',
-    7: 'Liters to Cubic Centimeters',
-    8: 'Cubic Centimeters to Liters',
-    9: 'Fluid Oz to Cups',
-    10: 'Fluid Oz to Pints',
-    11: 'Fluid Oz to Quarts',
-    12: 'Fluid Oz to Gallons',
-    13: 'Cups to Fluid Oz',
-    14: 'Cups to Pints',
-    15: 'Cups to Quarts',
-    16: 'Cups to Gallons',
-    17: 'Pints to Fluid Oz',
-    18: 'Pints to Cups',
-    19: 'Pints to Gallons',
-    20: 'Quarts to Fluid Oz',
-    21: 'Quarts to Cups',
-    22: 'Quarts to Pints',
-    23: 'Quarts to Gallons',
-    24: 'Gallons to Fluid Oz',
-    25: 'Gallons to Cups',
-    26: 'Gallons to Pints',
-    27: 'Gallons to Quarts',
+    7: 'Pounds to Tons',
+    8: 'Ounces to Tons',
+    9: 'Tons to Pounds',
+    10: 'Tons to Ounces',
+    11: 'Liters to Cubic Centimeters',
+    12: 'Cubic Centimeters to Liters',
+    13: 'Fluid Oz to Cups',
+    14: 'Fluid Oz to Pints',
+    15: 'Fluid Oz to Quarts',
+    16: 'Fluid Oz to Gallons',
+    17: 'Cups to Fluid Oz',
+    18: 'Cups to Pints',
+    19: 'Cups to Quarts',
+    20: 'Cups to Gallons',
+    21: 'Pints to Fluid Oz',
+    22: 'Pints to Cups',
+    23: 'Pints to Quarts',
+    24: 'Pints to Gallons',
+    25: 'Quarts to Fluid Oz',
+    26: 'Quarts to Cups',
+    27: 'Quarts to Pints',
+    28: 'Quarts to Gallons',
+    29: 'Gallons to Fluid Oz',
+    30: 'Gallons to Cups',
+    31: 'Gallons to Pints',
+    32: 'Gallons to Quarts',
 }
 
 Select = {
@@ -513,6 +770,62 @@ while run == 0:
             wmg()
         elif choice4 == 4:
             wmk()
+        elif choice4 == 5:
+            wpo()
+        elif choice4 == 6:
+            wop()
+        elif choice4 == 7:
+            wpt()
+        elif choice4 == 8:
+            wot()
+        elif choice4 == 9:
+            wtp()
+        elif choice4 == 10:
+            wto()
+        elif choice4 == 11:
+            wlc()
+        elif choice4 == 12:
+            wcl()
+        elif choice4 == 13:
+            wfc()
+        elif choice4 == 14:
+            wfp()
+        elif choice4 == 15:
+            wfq()
+        elif choice4 == 16:
+            wfg()
+        elif choice4 == 17:
+            wcf()
+        elif choice4 == 18:
+            wcp()
+        elif choice4 == 19:
+            wcq()
+        elif choice4 == 20:
+            wcg()
+        elif choice4 == 21:
+            wpf()
+        elif choice4 == 22:
+            wpc()
+        elif choice4 == 23:
+            wpq()
+        elif choice4 == 24:
+            wpg()
+        elif choice4 == 25:
+            wqf()
+        elif choice4 == 26:
+            wqc()
+        elif choice4 == 27:
+            wqp()
+        elif choice4 == 28:
+            wqg()
+        elif choice4 == 29:
+            wgf()
+        elif choice4 == 30:
+            wgc()
+        elif choice4 == 31:
+            wgp()
+        elif choice4 == 32:
+            wgq()
     else:
         print("\nThat is not a valid choice!\n\nPlease run this program again!\n")
     
