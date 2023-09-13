@@ -164,7 +164,7 @@ while run == 0:
         try:
             choice2 = int(choice2)
             if choice2 == 1:
-                A_R()
+                s.A_R()
             elif choice2 == 2:
                 s.A_P()
             elif choice2 == 3:
@@ -172,7 +172,7 @@ while run == 0:
             elif choice2 == 4:
                 s.A_Tp()
             elif choice2 == 5:
-                A_C()
+                s.A_C()
         except:
             print("\nNot valid.")
 
