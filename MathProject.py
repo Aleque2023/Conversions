@@ -110,7 +110,7 @@ while run == 0:
 ################# The letters followed by C stands for what is converted
 ################# EX: cmc = convert meters to centimeters and so forth
         try:
-            choice1 = input("Please select a number: ")
+            choice1 = int(input("Please select a number: "))
             if choice1 == "1":
                 s.cmc()
             elif choice1 == 2:
