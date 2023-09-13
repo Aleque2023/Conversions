@@ -1,4 +1,4 @@
-###############This file will contain most of the definitions
+###############This file will contain most of the functions
 
 import math
 
