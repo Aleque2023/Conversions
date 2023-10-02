@@ -275,16 +275,12 @@ while run == 0:
                 s.wgq()
         except:
             print("\nNot valid.")
-    
     program = input("\nWould you like to run the entire program again? (Y/N) ")
-    if program.lower() == "n":
-        run += 1
-        break
-    elif program == "":
-        run += 1
-        break
-    elif program.lower() == "y":
+    if program.lower() == "y":
         run == 0
+    else:
+        run += 1
+        break
 
 print("\nIn case I don't see you:\nGood Morning, Good Afternoon, Good Evening, and Good Night!")
 print("\nFeel free to add on to this!\n")
