@@ -4,13 +4,13 @@ import math
 import Support as s
 
 def hello():
-    print(f"\nWelcome To {Select[x]}!\n")
+    print(f"\nWelcome To {Select[sel]}!\n")
 
 area = {
     1: 'Area of a Rectangle ',
     2: 'Area of a Parallelogram ',
     3: 'Area of a Triangle ',
-    4: 'Area of a Trapizoid ',
+    4: 'Area of a Trapezoid ',
     5: 'Area of a circle',
 }
 
@@ -83,7 +83,7 @@ weightconv = {
 ################################## Note, I could try to change the longer dictionaries into smaller dictionaries in the future. Dictionary within a dictionary
 Select = {
     1: 'Converting Measurements',
-    2: 'Calcuating the Area',
+    2: 'Calculating the Area',
     3: 'Converting Time',
     4: 'Converting Weight',
 }
