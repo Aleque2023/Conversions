@@ -1,10 +1,14 @@
 #The goal of this program is to be able to do math equations and conversions
+run = 0
+
 
 import math
 import Support as s
 
+
 def hello():
     print(f"\nWelcome To {Select[sel]}!\n")
+
 
 area = {
     1: 'Area of a Rectangle ',
@@ -13,6 +17,7 @@ area = {
     4: 'Area of a Trapezoid ',
     5: 'Area of a circle',
 }
+
 
 disconv = {
     1: 'Meters to Centimeters',
@@ -37,6 +42,7 @@ disconv = {
     20: 'Kilometers to Miles',
 }
 
+
 timeconv = {
     1: 'Seconds to Minutes',
     2: 'Seconds to Hours',
@@ -45,6 +51,7 @@ timeconv = {
     5: 'Hours to Seconds',
     6: 'Hours to Minutes',
 }
+
 
 weightconv = {
     1: 'Grams to Milligrams',
@@ -80,6 +87,8 @@ weightconv = {
     31: 'Gallons to Pints',
     32: 'Gallons to Quarts',
 }
+
+
 ################################## Note, I could try to change the longer dictionaries into smaller dictionaries in the future. Dictionary within a dictionary
 Select = {
     1: 'Converting Measurements',
@@ -88,10 +97,12 @@ Select = {
     4: 'Converting Weight',
 }
 
+
 print("Thanks for using my program!")
 
-run = 0
+
 while run == 0:
+
 
     for x in Select.keys():
         print(f"\nYour choices are {x}: {Select[x]}")    
@@ -100,10 +111,10 @@ while run == 0:
         sel = int(sel)
     except:
         print("\nThat is not a valid choice!\n\nPlease run this program again!")
+    
+    
     if sel == 1:
-
         hello()
-
         for key1, value1 in disconv.items():
             print(f"Your choices are {key1}: {value1}.\n")
 ################# The C in the definitions stands for convert.
@@ -154,10 +165,10 @@ while run == 0:
         except:
                 print("\nNot valid.")
 
-    elif sel == 2:
-        
-        hello()
 
+
+    elif sel == 2:
+        hello()
         for key2, value2 in area.items():
             print(f"Your choices are {key2}: {value2}.\n")
         choice2 = input("Please select a number: ")
@@ -176,10 +187,9 @@ while run == 0:
         except:
             print("\nNot valid.")
 
+
     elif sel == 3:
-
         hello()
-
         for key3, value3 in timeconv.items():
             print(f"Your choices are {key3}: {value3}.\n")
         choice3 = input("Please select a number: ")
@@ -200,10 +210,9 @@ while run == 0:
         except:
             print("\nNot valid.")
 
+
     elif sel == 4:
-
         hello()
-
         for key4, value4 in weightconv.items():
             print(f"Your choices are {key4}: {value4}.\n")
         choice4 = input("Please select a number: ")
@@ -281,6 +290,7 @@ while run == 0:
     else:
         run += 1
         break
+
 
 print("\nIn case I don't see you:\nGood Morning, Good Afternoon, Good Evening, and Good Night!")
 print("\nFeel free to add on to this!\n")
