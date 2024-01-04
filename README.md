@@ -1,3 +1,3 @@
 # Math equations & converting units of measurements
 Using python, this program will be able to convert measurements.
-Feel free to contribute to this project if you come across it!
+Feel free to contribute!
