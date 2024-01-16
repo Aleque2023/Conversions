@@ -1,3 +1,3 @@
 # Math equations & converting measurements
-This program will convert measurements for you.
+This program converts measurements for you.
 Feel free to contribute!
